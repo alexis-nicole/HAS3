@@ -10,7 +10,8 @@ cmake_minimum_required (VERSION 3.8)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # ================================================================
-# Boost
+# Boost - I have compiled and copied the lirbaries under stardard folder.
+# This is not necessary anymore.
 # ----------------------------------------------------------------
 #set(Boost_INCLUDE_DIR " " CACHE PATH "Boost header folder" )
 #set(Boost_LIBRARY_DIR " " CACHE PATH "Boost library folder" )
@@ -33,8 +34,6 @@ add_executable(${PROJECT_NAME} ${_SOURCES} ${_HEADERS})
 target_link_libraries(${PROJECT_NAME} boost_program_options)
 target_link_libraries(${PROJECT_NAME} boost_chrono)
 target_link_libraries(${PROJECT_NAME} pthread)
-
-
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 20)

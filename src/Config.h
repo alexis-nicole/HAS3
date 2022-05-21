@@ -1,8 +1,7 @@
 /**********************************************************************************
-* @File      COnfig.h.in
+* @File      Config.h.in
 * @Author    Alexis Nicole Benini, Ph.D.
-* @Date      May 18th, 2022
-* @Copyright RedWire Space
+* @Date      May 20th, 2022
 **********************************************************************************/
 
 /** 
@@ -19,7 +18,7 @@
 #define VERSION_MAJOR 0
 #define VERSION_MINOR 1
 
-#define GIT_HASH ""
+#define GIT_HASH "cb080e4"
 
 #ifndef _EXPORT
   #if (defined _WIN32 || defined WINCE || defined __CYGWIN__)
